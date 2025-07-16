@@ -8,14 +8,31 @@ export default function Home() {
         <title>TuCriadero - Próximamente</title>
         <meta name="description" content="TuCriadero - Encuentra a tu compañero ideal. Solo criadores con núcleo zoológico." />
       </Head>
-      <div className="bg-cover bg-center min-h-screen flex flex-col items-center justify-center text-white px-4" style={{ backgroundImage: "url('/background.jpg')" }}>
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg text-center">PRÓXIMAMENTE</h1>
-        
+      <div
+        className="bg-cover bg-center min-h-screen flex flex-col items-center justify-center text-white px-4"
+        style={{ backgroundImage: "url('/background.jpg')" }}
+      >
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg text-center">
+          PRÓXIMAMENTE
+        </h1>
+
+        {/* Logo debajo de "PRÓXIMAMENTE" */}
+        <Image
+          src="/logo-criador.png"
+          alt="Logo TuCriadero"
+          width={100}
+          height={100}
+          className="mb-4"
+        />
+
         {/* Título con color verde personalizado */}
-        <h2 className="text-4xl md:text-5xl font-bold mb-2 drop-shadow-lg text-center" style={{ color: '#9ee0c6' }}>
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-2 drop-shadow-lg text-center"
+          style={{ color: '#9ee0c6' }}
+        >
           TuCriadero
         </h2>
-        
+
         <p className="text-lg md:text-xl mb-6 text-white drop-shadow text-center">
           Encuentra a tu compañero ideal. Solo criadores con núcleo zoológico.
         </p>
@@ -36,8 +53,6 @@ export default function Home() {
             placeholder="Introduce tu email"
             className="p-2 rounded-md w-full text-black"
           />
-          
-          {/* Botón con color verde personalizado */}
           <button
             type="submit"
             className="hover:opacity-90 text-black px-4 py-2 rounded-md transition"
@@ -48,16 +63,20 @@ export default function Home() {
         </form>
 
         <div className="flex gap-4 mt-8">
-          <a href="https://instagram.com/tucriadero_es" target="_blank" rel="noopener noreferrer">
-            <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" />
-          </a>
-          <a href="https://twitter.com/tucriadero" target="_blank" rel="noopener noreferrer">
-            <img src="/twitter.svg" alt="Twitter" className="w-6 h-6" />
-          </a>
-          <a href="https://tiktok.com/@tucriadero" target="_blank" rel="noopener noreferrer">
-            <img src="/tiktok.svg" alt="TikTok" className="w-6 h-6" />
-          </a>
-        </div>
+  <a href="https://instagram.com/tucriadero_es" target="_blank" rel="noopener noreferrer">
+    <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" />
+  </a>
+  <a href="https://twitter.com/tucriadero" target="_blank" rel="noopener noreferrer">
+    <img src="/twitter.svg" alt="Twitter" className="w-6 h-6" />
+  </a>
+  <a href="https://tiktok.com/@tucriadero" target="_blank" rel="noopener noreferrer">
+    <img src="/tiktok.svg" alt="TikTok" className="w-6 h-6" />
+  </a>
+  {/* Nuevo icono de Facebook */}
+  <a href="https://www.facebook.com/profile.php?id=61578085180300" target="_blank" rel="noopener noreferrer">
+    <img src="/facebook.svg" alt="Facebook" className="w-6 h-6" />
+  </a>
+</div>
       </div>
     </>
   )
